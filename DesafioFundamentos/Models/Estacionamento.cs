@@ -28,7 +28,7 @@ namespace DesafioFundamentos.Models
             //Pedir para o usuário digitar a placa e armazenar na variável placa
             string placa = Console.ReadLine().ToUpper();
 
-            // var veiculo = veiculos.FirstOrDefault(x => x.Placa.Contains(placa);)
+
 
             //Verifica se o veículo existe
             if (veiculos.Any(x => x.Placa.ToUpper() == placa.ToUpper()))
@@ -59,13 +59,6 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
-                // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // veiculos.ForEach(x =>
-                // {
-                //     Console.WriteLine(x);
-                // });]
-
-                
 
                 foreach (Veiculo item in veiculos)
                 {
